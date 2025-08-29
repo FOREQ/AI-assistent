@@ -122,7 +122,7 @@ body {
   width: 50%;
   transition: transform 0.6s ease-in-out;
 }
-.overlay-left { transform: translateX(-20%); left: 0; }
+.overlay-left { transform: none; left: 0; }
 .overlay-right { right: 0; transform: translateX(0); }
 
 .ghost {
