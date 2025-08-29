@@ -1,3 +1,4 @@
+/* nav */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,9 @@
 
 body {
   background: #f4f4f4;
+  display: flex;              /* Включаем flexbox */
+  flex-direction: column;     /* Элементы располагаются вертикально */
+  min-height: 100vh;          /* Минимальная высота — весь экран */
 }
 
 .navbar {
@@ -73,4 +77,44 @@ body {
 
 .btn-signup:hover {
   background: #205295;
+}
+
+/* social */
+.social-container {
+  display: flex;
+  flex-direction: column; /* заголовок сверху, иконки снизу */
+  align-items: center;
+  justify-content: center;
+  background-color: #205295;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  margin-top: auto;           /* Прижимает к низу */
+}
+
+.social-container h2 {
+  margin-bottom: 12px; /* отступ между заголовком и иконками */
+  font-size: 20px;
+  color: aquamarine;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* расстояние между иконками */
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links a img {
+  width: 32px;   /* фиксированный маленький размер */
+  height: 32px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #2C74B3);
 }

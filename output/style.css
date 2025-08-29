@@ -110,3 +110,47 @@ body {
   font-weight: bold;
   color: #2C74B3;
 }
+
+/* social */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column; /* заголовок сверху, иконки снизу */
+  align-items: center;
+  justify-content: center;
+  background-color: #205295;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.social-container h2 {
+  margin-bottom: 12px; /* отступ между заголовком и иконками */
+  font-size: 20px;
+  color: aquamarine;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* расстояние между иконками */
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links a img {
+  width: 32px;   /* фиксированный маленький размер */
+  height: 32px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #2C74B3);
+}
