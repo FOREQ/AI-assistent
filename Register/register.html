@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login/Register Overlay</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container" id="container">
-    <!-- Sign Up -->
-    <div class="form-container sign-up-container">
-      <form class="form">
-        <h2>Регистрация</h2>
-        <input type="text" placeholder="Имя">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Пароль">
-        <button>Создать аккаунт</button>
-      </form>
-    </div>
-
     <!-- Sign In -->
     <div class="form-container sign-in-container">
       <form class="form">
         <h2>Вход</h2>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Пароль">
-        <button>Войти</button>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Пароль" required />
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="form-container sign-up-container">
+      <form class="form">
+        <h2>Регистрация</h2>
+        <input type="text" placeholder="Имя" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Пароль" required />
+        <button type="submit">Создать аккаунт</button>
       </form>
     </div>
 
@@ -33,14 +33,14 @@
     <div class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-left">
-          <h2>Добро пожаловать!</h2>
-          <p>Уже есть аккаунт?</p>
-          <button id="signIn">Войти</button>
+          <h2>С возвращением!</h2>
+          <p>Если у вас уже есть аккаунт, войдите</p>
+          <button class="ghost" id="signIn">Войти</button>
         </div>
         <div class="overlay-panel overlay-right">
-          <h2>Привет!</h2>
-          <p>Нет аккаунта?</p>
-          <button id="signUp">Зарегистрироваться</button>
+          <h2>Привет, друг!</h2>
+          <p>Введите данные для регистрации</p>
+          <button class="ghost" id="signUp">Зарегистрироваться</button>
         </div>
       </div>
     </div>
