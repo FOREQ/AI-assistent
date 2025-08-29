@@ -3,14 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #f4f4f4;
-  display: flex;              /* Включаем flexbox */
-  flex-direction: column;     /* Элементы располагаются вертикально */
-  min-height: 100vh;          /* Минимальная высота — весь экран */
+  background: #144272;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; /* Перемещено сюда */
 }
 
 .navbar {
@@ -80,6 +79,11 @@ body {
 }
 
 /* social */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .social-container {
   display: flex;
   flex-direction: column; /* заголовок сверху, иконки снизу */
@@ -89,7 +93,6 @@ body {
   width: 100%;
   padding: 20px 0;
   color: #fff;
-  margin-top: auto;           /* Прижимает к низу */
 }
 
 .social-container h2 {

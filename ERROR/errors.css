@@ -1,0 +1,66 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0A2647;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.error-container {
+    display: none; /* Скрываем по умолчанию */
+    text-align: center;
+    background-color: #205295;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+}
+
+.error-container.active {
+    display: block; /* Показываем активный блок */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 6rem;
+    color: aquamarine;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    margin-bottom: 2rem;
+}
+
+.error-container a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2C74B3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.error-container a:hover {
+    background-color: #205295;
+}
