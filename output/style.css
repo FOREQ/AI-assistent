@@ -1,3 +1,4 @@
+/* nav */
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +76,7 @@
   background: #205295;
 }
 
+/* body */
 body {
   font-family: Arial, sans-serif;
   background: #144272;
@@ -112,11 +114,6 @@ body {
 }
 
 /* social */
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .social-container {
   display: flex;
   flex-direction: column; /* заголовок сверху, иконки снизу */
@@ -126,6 +123,7 @@ body {
   width: 100%;
   padding: 20px 0;
   color: #fff;
+  margin-top: auto;           /* Прижимает к низу */
 }
 
 .social-container h2 {
