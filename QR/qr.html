@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI ASSISTENT</title>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      background: #0A2647;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #reader {
+      width: 350px;
+      max-width: 90vw;
+    }
+  </style>
+</head>
+<body>
+  <h1>Сканируй QR</h1>
+  <div id="reader"></div>
+
+  <script>
+    function onScanSuccess(decodedText) {
+      if (decodedText.startsWith("http")) {
+        // передаём QR как параметр в свою страницу
+        window.location.href = "/receipt.html?data=" + encodeURIComponent(decodedText);
+      } else {
+        alert("QR: " + decodedText);
+      }
+    }
+
+    let html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
+    html5QrcodeScanner.render(onScanSuccess, () => {});
+  </script>
+</body>
+</html>
