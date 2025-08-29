@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Информация из QR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AI ASSISTENT</div>
+        <ul class="nav-links">
+            <li><a href="/HOME/home.html">Главная</a></li>
+            <li><a href="/INFO/info.html">Информация</a></li>
+            <li><a href="/history/history.html">История</a></li>
+            <li><a href="/QR/qr.html">QR</a></li>
+        </ul>
+         <div class="auth-buttons">
+            <a href="/Register/register.html#signin" class="btn btn-signin">Sign In</a>
+            <a href="/Register/register.html#signup" class="btn btn-signup">Sign Up</a>
+        </div>
+    </nav>
+
+  <div class="card">
+    <h2>Данные из QR</h2>
+    <div class="item"><span class="label">Номер i:</span> <span id="i"></span></div>
+    <div class="item"><span class="label">Фискальный признак (f):</span> <span id="f"></span></div>
+    <div class="item"><span class="label">Сумма (s):</span> <span id="s"></span></div>
+    <div class="item"><span class="label">Дата (t):</span> <span id="t"></span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

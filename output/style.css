@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #0A2647;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;   /* фиксируем сверху */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: aquamarine;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #2C74B3; /* подсветка при наведении */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-signin {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-signin:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.btn-signup {
+  background: #2C74B3;
+  color: #fff;
+  border: none;
+}
+
+.btn-signup:hover {
+  background: #205295;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #144272;
+  color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 80px; /* отступ равный высоте навбара */
+}
+
+.card {
+  background: #0A2647;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  max-width: 400px;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.item {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.label {
+  font-weight: bold;
+  color: #2C74B3;
+}
