@@ -9,3 +9,12 @@ signUpBtn.addEventListener('click', () => {
 signInBtn.addEventListener('click', () => {
   container.classList.remove('right-panel-active');
 });
+
+// При загрузке страницы проверяем хэш
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash === "#signup") {
+    container.classList.add("right-panel-active");
+  } else {
+    container.classList.remove("right-panel-active");
+  }
+});
