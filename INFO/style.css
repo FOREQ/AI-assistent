@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #144272;
   display: flex;              /* Включаем flexbox */
   flex-direction: column;     /* Элементы располагаются вертикально */
   min-height: 100vh;          /* Минимальная высота — весь экран */

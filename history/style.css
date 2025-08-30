@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #144272;
   display: flex;              /* Включаем flexbox */
   flex-direction: column;     /* Элементы располагаются вертикально */
   min-height: 100vh;          /* Минимальная высота — весь экран */
@@ -78,6 +78,25 @@ body {
 .btn-signup:hover {
   background: #205295;
 }
+
+/* card */
+
+.entry {
+  background: #0A2647;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.card h1 {
+  margin-bottom: 12px;
+  color: aquamarine;
+  text-align: center;
+}
+
+
 
 /* social */
 .social-container {
